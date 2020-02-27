@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mix-Or-Match</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" async></script>
+
+  </head>
+  <body>
+    <h1 class="page-title">Mix-Or-Match</h1>
+
+    <div class="overlay-text visible">
+      Click to Start
+    </div>
+
+    <div id="game-over-text" class="overlay-text">
+      GAME OVER!
+      <span class="overlay-text-small">Click to Restart!<span>
+    </div>
+
+    <div id="victory-text" class="overlay-text">
+      VICTORY!
+      <span class="overlay-text-small">Click to Restart!<span>
+    </div>
+
+    <div class="game-container">
+      <div class="gameinfocontainer">
+        <div class="gameinfo">
+          Time <span id="remaintime">100</span>
+        </div>
+        <div class="gameinfo">
+          Flips <span id="flips">0</span>
+        </div>
+      </div>
+
+      <!-- cards start here -->
+      <div class="cards">
+        <!-- card from behind view -->
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="spider" src="Assets/Images/Spider.png" alt="image not found">
+        </div>
+
+        <!-- card from front view -->
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="card-value" src="Assets/Images/Bat.png" alt="image not found">
+        </div>
+
+      </div>
+
+      <!-- card2 -->
+      <div class="cards">
+        <!-- card from behind view -->
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="spider" src="Assets/Images/Spider.png" alt="image not found">
+        </div>
+
+        <!-- card from front view -->
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="card-value" src="Assets/Images/Bat.png" alt="image not found">
+        </div>
+
+      </div>
+
+      <!-- card3 -->
+      <div class="cards">
+        <!-- card from behind view -->
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="spider" src="Assets/Images/Spider.png" alt="image not found">
+        </div>
+
+        <!-- card from front view -->
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="card-value" src="Assets/Images/Bones.png" alt="image not found">
+        </div>
+      </div>
+
+      <!-- card4 -->
+      <div class="cards">
+        <!-- card from behind view -->
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="spider" src="Assets/Images/Spider.png" alt="image not found">
+        </div>
+
+        <!-- card from front view -->
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="card-value" src="Assets/Images/Bones.png" alt="image not found">
+        </div>
+
+      </div>
+
+      <!-- card5 -->
+      <div class="cards">
+        <!-- card from behind view -->
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="spider" src="Assets/Images/Spider.png" alt="image not found">
+        </div>
+
+        <!-- card from front view -->
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="card-value" src="Assets/Images/Cauldron.png" alt="image not found">
+        </div>
+
+      </div>
+      <!-- card6 -->
+      <div class="cards">
+        <!-- card from behind view -->
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="spider" src="Assets/Images/Spider.png" alt="image not found">
+        </div>
+
+        <!-- card from front view -->
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="card-value" src="Assets/Images/Cauldron.png" alt="image not found">
+        </div>
+
+      </div>
+      <div class="cards">
+        <!-- card from behind view -->
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="spider" src="Assets/Images/Spider.png" alt="image not found">
+        </div>
+
+        <!-- card from front view -->
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="card-value" src="Assets/Images/Ghost.png" alt="image not found">
+        </div>
+
+      </div>
+      <div class="cards">
+        <!-- card from behind view -->
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="spider" src="Assets/Images/Spider.png" alt="image not found">
+        </div>
+
+        <!-- card from front view -->
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="card-value" src="Assets/Images/Ghost.png" alt="image not found">
+        </div>
+
+      </div>
+      <div class="cards">
+        <!-- card from behind view -->
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="spider" src="Assets/Images/Spider.png" alt="image not found">
+        </div>
+
+        <!-- card from front view -->
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="card-value" src="Assets/Images/Pumpkin.png" alt="image not found">
+        </div>
+
+      </div>
+      <div class="cards">
+        <!-- card from behind view -->
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="spider" src="Assets/Images/Spider.png" alt="image not found">
+        </div>
+
+        <!-- card from front view -->
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="card-value" src="Assets/Images/Pumpkin.png" alt="image not found">
+        </div>
+
+      </div>
+      <div class="cards">
+        <!-- card from behind view -->
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="spider" src="Assets/Images/Spider.png" alt="image not found">
+        </div>
+
+        <!-- card from front view -->
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="card-value" src="Assets/Images/Skull.png" alt="image not found">
+        </div>
+
+      </div>
+      <div class="cards">
+        <!-- card from behind view -->
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="spider" src="Assets/Images/Spider.png" alt="image not found">
+        </div>
+
+        <!-- card from front view -->
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="card-value" src="Assets/Images/Skull.png" alt="image not found">
+        </div>
+
+      </div>
+      <div class="cards">
+        <!-- card from behind view -->
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="spider" src="Assets/Images/Spider.png" alt="image not found">
+        </div>
+
+        <!-- card from front view -->
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="card-value" src="Assets/Images/Eye.png" alt="image not found">
+        </div>
+
+      </div>
+      <div class="cards">
+        <!-- card from behind view -->
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="spider" src="Assets/Images/Spider.png" alt="image not found">
+        </div>
+
+        <!-- card from front view -->
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="card-value" src="Assets/Images/Eye.png" alt="image not found">
+        </div>
+
+      </div>
+      <div class="cards">
+        <!-- card from behind view -->
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="spider" src="Assets/Images/Spider.png" alt="image not found">
+        </div>
+
+        <!-- card from front view -->
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="card-value" src="Assets/Images/Dracula.png" alt="image not found">
+        </div>
+
+      </div>
+      <div class="cards">
+        <!-- card from behind view -->
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/Cobweb.png" alt="image not found">
+          <img class="spider" src="Assets/Images/Spider.png" alt="image not found">
+        </div>
+
+        <!-- card from front view -->
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-top-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-left" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="cob-web cob-web-bottom-right" src="Assets/Images/CobwebGrey.png" alt="image not found">
+          <img class="card-value" src="Assets/Images/Dracula.png" alt="image not found">
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </body>
+</html>
